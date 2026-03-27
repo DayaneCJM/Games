@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bs2psg58qd5ap"]
+
+[ext_resource type="Texture2D" uid="uid://b0dlkwssnnvgh" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="3_xwuul"]
+[ext_resource type="Texture2D" uid="uid://clomdkbm2pqve" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="4_bj8tx"]
+[ext_resource type="Texture2D" uid="uid://2hi8jfkjbhbr" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="5_r0gk3"]
+[ext_resource type="Texture2D" uid="uid://chax6ls17hf3a" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="6_vkdxw"]
+[ext_resource type="Texture2D" uid="uid://ccatncb4fb02l" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png" id="7_4qp2d"]
+
+[node name="Cenario" type="Node2D" unique_id=1384159672]
+
+[node name="Camada5" type="Parallax2D" parent="." unique_id=828471398]
+scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(288, 0)
+repeat_times = 3
+
+[node name="Fundo" type="Sprite2D" parent="Camada5" unique_id=1509071514]
+z_index = -5
+texture = ExtResource("3_xwuul")
+centered = false
+
+[node name="Camada4" type="Parallax2D" parent="." unique_id=980470008]
+scroll_scale = Vector2(0.25, 0.25)
+repeat_size = Vector2(288, 0)
+repeat_times = 3
+
+[node name="Nuvens" type="Sprite2D" parent="Camada4" unique_id=861134861]
+z_index = -5
+texture = ExtResource("4_bj8tx")
+centered = false
+
+[node name="Camada3" type="Parallax2D" parent="." unique_id=2119162738]
+scroll_scale = Vector2(0.05, 0.05)
+repeat_size = Vector2(288, 0)
+repeat_times = 3
+
+[node name="Nuvens2" type="Sprite2D" parent="Camada3" unique_id=174114763]
+z_index = -5
+texture = ExtResource("5_r0gk3")
+centered = false
+
+[node name="Camada2" type="Parallax2D" parent="." unique_id=636278177]
+scroll_scale = Vector2(0.25, 0.25)
+repeat_size = Vector2(288, 0)
+repeat_times = 3
+
+[node name="montanhas" type="Sprite2D" parent="Camada2" unique_id=1879845147]
+z_index = -5
+texture = ExtResource("6_vkdxw")
+centered = false
+
+[node name="Camada1" type="Parallax2D" parent="." unique_id=1524706678]
+scroll_scale = Vector2(0.6, 0.6)
+repeat_size = Vector2(288, 0)
+repeat_times = 3
+
+[node name="arvores" type="Sprite2D" parent="Camada1" unique_id=94989284]
+z_index = -5
+texture = ExtResource("7_4qp2d")
+centered = false

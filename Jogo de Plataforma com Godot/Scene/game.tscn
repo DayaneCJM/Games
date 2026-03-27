@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://f3dynxp7xjg2" path="res://entities/player.tscn" id="1_mhtsl"]
 [ext_resource type="TileSet" uid="uid://m5flfwg2up6f" path="res://terreno.tres" id="2_4jv7b"]
 [ext_resource type="TileSet" uid="uid://cwplmjl6uhg13" path="res://Decoration.tres" id="3_03iqk"]
+[ext_resource type="PackedScene" uid="uid://bs2psg58qd5ap" path="res://Scene/cenario.tscn" id="4_03iqk"]
+[ext_resource type="PackedScene" uid="uid://bajg83isopedp" path="res://entities/inimigo.tscn" id="4_ihreq"]
 
 [node name="Game" type="Node2D" unique_id=1060421828]
 
@@ -19,3 +21,8 @@ tile_set = ExtResource("2_4jv7b")
 [node name="Decoration" type="TileMapLayer" parent="Tiles" unique_id=1541496215]
 tile_map_data = PackedByteArray("AAAMAAoAAAAJAAEAAAANAAoAAAAJAAEAAAABAAsAAAAGAAUAAAACAAsAAAAGAAUAAAADAAsAAAAGAAUAAAAEAAsAAAAHAAUAAAAAAAsAAAAKAAUAAAANAAYAAAAFAAEAAADw/9b/AAAFAAEAAADx/9b/AAAFAAEAAAD2/9X/AAAJAAEAAAAkAAQAAgAAAAAAAAAmAAYAAAAGAAUAAAAnAAYAAAAGAAUAAAAoAAYAAAAHAAUAAAAlAAYAAQAFAAIAAAApAAYAAAADAAUAAAAoAAUAAQABAAEAAAAgAAYAAAAKAAUAAAAfAAYAAAAKAAUAAAAhAAYAAAAMAAUAAAA=")
 tile_set = ExtResource("3_03iqk")
+
+[node name="Cenario" parent="." unique_id=1384159672 instance=ExtResource("4_03iqk")]
+
+[node name="Inimigo" parent="." unique_id=1439716047 instance=ExtResource("4_ihreq")]
+position = Vector2(101, 179)

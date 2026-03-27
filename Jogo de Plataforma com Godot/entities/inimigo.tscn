@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bajg83isopedp"]
+
+[ext_resource type="Texture2D" uid="uid://yowyb3bfceiq" path="res://sprites/3 - Big Red/Facing_Player_(32 x 32).png" id="1_030df"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yagdu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_030df")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g45jm"]
+radius = 7.0
+height = 18.0
+
+[node name="Inimigo" type="CharacterBody2D" unique_id=1439716047]
+z_index = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1463989229]
+position = Vector2(-1, -2)
+sprite_frames = SubResource("SpriteFrames_yagdu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=521067608]
+position = Vector2(-1, 5)
+shape = SubResource("CapsuleShape2D_g45jm")
